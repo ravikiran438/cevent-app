@@ -13,6 +13,6 @@
     "commit": "82dda8940fc68bb178d6f36aee169cf6ce17785d"
   },
   "_source": "git://github.com/PascalPrecht/bower-angular-translate-storage-cookie.git",
-  "_target": "~0.1.6",
+  "_target": "~0.1.7",
   "_originalSource": "angular-translate-storage-cookie"
 }
