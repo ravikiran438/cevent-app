@@ -12,6 +12,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/famfamfam-flags.css">
         <!-- endbuild -->
@@ -100,9 +102,18 @@
             <div class="well" ng-view=""></div>
 
             <div class="footer">
+                <!--
                 <p translate="footer">This is your footer</p>
+                -->
+                <div class="logo pull-left"><a href="https://www.openshift.com/" target="_blank"></a></div>
+                    <div class="pull-right">
+                    Powered by <a href="http://jhipster.github.io/" target="_blank">JHipster</a>                       <br>
+                    &copy; 2014. MyPlayList. All Rights Reserved.
+                    <br>
+                    All content, trademarks and logos are copyright of their respective owners.
+                    </div>
+                </div>
             </div>
-        </div>
 
         <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
         <script>
@@ -125,6 +136,7 @@
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
         <script src="scripts/http-auth-interceptor.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers.js"></script>

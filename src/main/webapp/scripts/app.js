@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var ceventAppApp = angular.module('ceventAppApp', ['http-auth-interceptor', 'ngResource', 'ngRoute', 'ngCookies', 'pascalprecht.translate']);
+var ceventAppApp = angular.module('ceventAppApp', ['http-auth-interceptor', 'ngResource', 'ngRoute', 'ngCookies', 'pascalprecht.translate', 'xeditable']);
 
 ceventAppApp
     .config(['$routeProvider', '$httpProvider', '$translateProvider',
@@ -185,4 +185,7 @@ ceventAppApp
                     $rootScope.websocketRequest.sendMessage();
                 });
             }
-        ]);
+        ])
+        .run(function(editableOptions) {
+          editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+        });
