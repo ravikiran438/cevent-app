@@ -1,0 +1,8 @@
+{
+  "name": "angular-mocks",
+  "version": "1.2.14-build.2267+sha.cceb455",
+  "main": "./angular-mocks.js",
+  "dependencies": {
+    "angular": "1.2.14-build.2267+sha.cceb455"
+  }
+}

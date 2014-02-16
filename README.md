@@ -1,2 +1,2 @@
-cevent-app
-==========
+README for cevent-app
+==========================

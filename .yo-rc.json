@@ -1,0 +1,8 @@
+{
+  "generator-jhipster": {
+    "baseName": "cevent-app",
+    "packageName": "com.mycompany.cevent",
+    "packageFolder": "com/mycompany/cevent",
+    "hibernateCache": "ehcache"
+  }
+}
