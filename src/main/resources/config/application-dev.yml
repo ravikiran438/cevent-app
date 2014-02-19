@@ -1,6 +1,5 @@
 server:
     port: 8080
-    wsport: 8080
     address: localhost
 
 spring:
@@ -35,3 +34,6 @@ cache:
     timeToLiveSeconds: 3600
     ehcache:
         maxBytesLocalHeap: 16M
+
+websocket:
+    port: 8080

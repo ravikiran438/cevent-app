@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codahale.metrics.annotation.Timed;
-import com.mycompany.cevent.config.ServerConfigProperties;
+import com.mycompany.cevent.config.WebSocketConfigProperties;
 
 /**
- * REST controller for getting server properties.
+ * REST controller for getting web socket properties.
  */
 @RestController
 @RequestMapping("/app")
-public class ServerConfigPropertiesResource {
+public class WebSocketConfigPropertiesResource {
 
 	private final Logger log = LoggerFactory
-			.getLogger(ServerConfigPropertiesResource.class);
+			.getLogger(WebSocketConfigPropertiesResource.class);
 
 	@Autowired
-	private ServerConfigProperties serverConfigProperties;
+	private WebSocketConfigProperties webSocketConfigProperties;
 
 	/**
 	 * GET /rest/wsport -> get the server websocket port.
@@ -30,6 +30,6 @@ public class ServerConfigPropertiesResource {
 	@Timed
 	public int getWsport() {
 		log.debug("REST request to get ws port");
-		return serverConfigProperties.getWsport();
+		return webSocketConfigProperties.getPort();
 	}
 }
