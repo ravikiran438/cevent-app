@@ -3,7 +3,7 @@ server:
     address: localhost
 
 spring:
-    profiles: dev
+    profiles: openshift
     datasource:
         dataSourceClassName: org.hsqldb.jdbc.JDBCDataSource
         url: jdbc:hsqldb:mem:cevent-app
